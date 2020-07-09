@@ -26,5 +26,5 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 8443))
 
     bot = RandomGodBot(token, database_url)
-    #bot.start_webhook('https://sample.com/', port)
-    bot.start_local()
+    bot.start_webhook('https://random-god-bot.herokuapp.com/', port)
+    #bot.start_local()
