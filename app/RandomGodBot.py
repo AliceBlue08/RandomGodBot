@@ -1,14 +1,12 @@
-import telebot
-import requests
 import uuid
-from telegram.ext import Updater, CommandHandler, MessageHandler, ConversationHandler, Filters
-from telegram import KeyboardButton, ReplyKeyboardMarkup, ParseMode
-from app.models import User
+from datetime import datetime
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from telegram import KeyboardButton, ReplyKeyboardMarkup, ParseMode
+from telegram.ext import Updater, CommandHandler, ConversationHandler
 
-from datetime import datetime
+from app.models import User
 
 RECEIVED, CANCEL = 0, 1
 
